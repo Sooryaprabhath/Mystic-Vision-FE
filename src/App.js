@@ -36,7 +36,7 @@ const App = () => {
         } catch (error) {
           console.log(error);
         }
-      }, 1000); // debounce time of 1 second
+      }, 500);
       setTimeout(() => {
         setIsClicked(false);
       }, 10000);
@@ -46,9 +46,9 @@ const App = () => {
   return (
     <div className="container">
       <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
       </div>
       <h1 className="title">Your Fortune Today is:</h1>
       {!isClicked ? (
