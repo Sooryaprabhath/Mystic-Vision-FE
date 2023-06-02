@@ -44,22 +44,22 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-      <h1 className="title">Your Fortune Today is:</h1>
-      {!isClicked ? (
-        <button className="generate-button" onClick={generateSentence}>
-          Generate
-        </button>
-      ) : (
-        <InfinitySpin width="200" color="#4fa94d" />
-      )}
-      {sentence && <p className="generated-sentence">{sentence}</p>}
-    </div>
+   <div className='wrapper'> <div className="container">
+   <div>
+     <div className="wave"></div>
+     <div className="wave"></div>
+     <div className="wave"></div>
+   </div>
+   <h1 className="title">Your Fortune Today is:</h1>
+   {!isClicked ? (
+     <button className="generate-button" onClick={generateSentence}>
+       Generate
+     </button>
+   ) : (
+     <InfinitySpin width="200" color="#4fa94d" />
+   )}
+   {sentence && <p className="generated-sentence">{sentence}</p>}
+ </div></div>
   );
 };
 
