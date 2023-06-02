@@ -6,7 +6,7 @@ const App = () => {
 
   const generateSentence = async () => {
     try {
-      const response = await fetch("http://localhost:3001/random-sentence");
+      const response = await fetch("https://mystic-vision-be-hpur-b2lafqs24-sooryaprabhath.vercel.app/random-sentence");
       const data = await response.json();
       setSentence(data.sentence);
     } catch (error) {
