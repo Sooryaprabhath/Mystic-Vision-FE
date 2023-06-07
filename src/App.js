@@ -30,7 +30,7 @@ const App = () => {
     }
     setTimeout(() => {
       setIsClicked(false);
-    }, 10000);
+    }, 600000);
   };
 
   return (
